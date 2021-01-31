@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*navigation bar color change*/
+.sticky {
+    background: #CAD3C8;
+}
+
+/*header styling start*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.nav_bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /*border: 1px solid black;*/
+    box-shadow: -1px 3px 6px grey;
+}
+
+.logo > h3 {
+    font-size: 25px;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.logo > h3 > a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo > h3 > a > span {
+    color: red;
+}
+
+.navbar_Items > ul {
+    margin: 13px;
+}
+
+.navbar_Items > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar_Items > ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+    padding-left: 18px;
+    font-family: 'Ubuntu', sans-serif !important;
+    color: black;
+}
+
+.navbar_Items > ul > li > a:hover {
+    color: #ff253a;
+}
+
+/*main image section*/
+.main_image_section {
+    background: url("../images/Portfolio background.jpeg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image_detail {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.image_detail > h1 {
+    margin: 7px;
+}
+
+.image_detail > h1:nth-child(3) > span {
+    color: red;
+    font-size: 42px;
+}
+
+.image_detail > button {
+    margin: 7px;
+    padding: 10px 10px 10px;
+    width: 150px;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    border-color: #000000;
+}
+
+.image_detail > button:hover {
+    background: #ff253a;
+    border-color: #ff253a;
+}
+
+.image_detail > button > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*About section start*/
+.about_section {
+    width: 100%;
+    height: 100vh;
+}
+
+.about_section > h1 {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about_details_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_image_container {
+    position: relative;
+    width: 40%;
+    height: 537px;
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_image_box {
+    /*position: relative;*/
+    /*width: 450px;*/
+    /*height: 280px;*/
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    /*border: 1px solid red;*/
+}
+
+.border_line {
+    /*border: 10px solid black;*/
+    /*height: 250px;*/
+    /*width: 200px;*/
+    position: absolute;
+    left: 0;
+    right: 50px;
+    bottom: 0;
+    top: 50px;
+}
+
+.about_image {
+    background: url("../images/about image.jpeg") no-repeat;
+    background-size: cover;
+    /*width: 220px;*/
+    /*height: 265px;*/
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    right: 0;
+    left: 50px;
+}
+
+.about_details {
+    position: relative;
+    width: 60%;
+    height: 537px;
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_para {
+    /*width: 450px;*/
+    /*height: 280px;*/
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    /*border: 1px solid red;*/
+    font-size: 25px;
+}
+
+.about_para > button {
+    margin: 10px;
+    padding: 15px;
+    background: #ff253a;
+    border-color: #ff253a;
+    outline: none;
+}
+
+.about_para > button > a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+
+
+
