@@ -1,12 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /*navigation bar color change*/
 .sticky {
     background: #CAD3C8;
 }
+
+/*main section bottom border*/
+body > main > section {
+    border-bottom: 1px solid black;
+}
+
 
 /*header styling start*/
 .header {
@@ -151,7 +158,7 @@
 }
 
 .border_line {
-    /*border: 10px solid black;*/
+    border: 10px solid black;
     /*height: 250px;*/
     /*width: 200px;*/
     position: absolute;
@@ -201,13 +208,109 @@
     background: #ff253a;
     border-color: #ff253a;
     outline: none;
+    /*opacity: 0.6;*/
+    /*transition: 0.3s;*/
 }
 
 .about_para > button > a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     text-shadow: 0 0 5px black;
 }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*service section start*/
+.service_section > h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.service_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin: 20px 50px;
+
+    /*border: 1px solid red;*/
+    /*justify-content: space-evenly;*/
+    /*align-items: flex-start;*/
+    /*flex-wrap: wrap;*/
+}
+
+.service_item_container {
+    /*width: 300px;*/
+    height: 400px;
+    /*border: 1px solid yellow;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service{
+    /*width: 80%;*/
+    width: 300px;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition-duration: 0.4s;
+}
+
+.service:hover{
+    box-shadow: 1px 1px 8px 5px #000000;
+}
+
+.service>div{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 7px;
+    background: url("../images/Portfolio background.jpeg") no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+.service>p{
+    margin: 6px;
+}
+.service>button{
+    width: 120px;
+    height: 37px;
+    float: right;
+    margin: 5px 23px 5px 5px;
+    border-radius: 30px;
+    background: #ff253a;
+    border-color: #ff253a;
+    outline: none;
+}
+
+.service>button>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
